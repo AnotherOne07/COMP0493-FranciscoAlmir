@@ -19,7 +19,7 @@ void countSort (int inputArray[], int N){
     }
 
     // Calcula a soma do prefixo de cada índice do array countArray
-    for (int i = 0; i < N;i++){
+    for (int i = 1; i <= M;i++){
         countArray[i] += countArray[i-1];
     }
 
@@ -45,7 +45,7 @@ int main () {
     
     // Ordenando com countSort
     countSort(inputArray, N);
-    printf("Ordenando com countSort");
+    printf("Ordenando com countSort:\n");
     for(int i = 0;i < N;i++){
         printf("%d ", inputArray[i]);
     }
